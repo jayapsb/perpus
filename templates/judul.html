@@ -1,0 +1,6 @@
+<center>
+    <h1>E-Library</h1>
+    {% if user.is_authenticated %}
+        <p>{{ user }} / <a href="{% url 'keluar' %}">Logout</a></p>
+    {% endif %}
+</center>

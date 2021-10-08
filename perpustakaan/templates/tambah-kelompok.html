@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form action="" method="post">
+                {{ form.as_p }} <!-- tampikan form sebagai paragraf biar ke bawah (.as_p)-->
+                <button class="btn btn-primary">Tambah Kelompok</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

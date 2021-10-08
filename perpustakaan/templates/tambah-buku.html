@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {% for message in messages %}
+                    {% if message %}
+                        <div class="alert alert-success">{{ message }}</div>
+                    {% endif %}
+                {% endfor %}
+            <form action="/tambah-buku/" method="post">
+                {% csrf_token %}
+                {{ form.as_p }} <!-- tampikan form sebagai paragraf biar ke bawah (.as_p)-->
+                <button class="btn btn-primary">Tambah Buku</button>
+                <a href="/buku" class="btn btn-dark">Data Buku</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
