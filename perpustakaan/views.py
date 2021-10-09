@@ -8,7 +8,7 @@ from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm
 from perpustakaan.resource import BukuResource
 
-# Create your views here...
+# Create your views here... #
 
 def index(request):
     context = {
